@@ -58,3 +58,35 @@ const myFunction = function(){
 // dataType ka type => check by typeof
 
 
+// ***************Memory**********************************
+
+/*
+1. Heap -> (Non-primitive)  if we do any changes directly happen at original place 
+
+2. Stack -> (primitive)  if we do any changes happen at copy of an object 
+
+*/
+
+// stack
+let myYouTubename = "bhumishah"
+
+let anothername = myYouTubename
+anothername = "chaiaurcode"
+
+console.log(myYouTubename)
+console.log(anothername)
+
+//heap
+
+let userOne = {
+       email: "user@gmail.com",
+       upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "bhumi@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
