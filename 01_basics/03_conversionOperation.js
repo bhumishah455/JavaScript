@@ -29,3 +29,42 @@ let number = 33
 let StringNumber = String(number)
 console.log(StringNumber)
 console.log(typeof StringNumber)
+
+// *******************Operation ***********************************
+
+// console.log(2+2);
+// console.log(2%3);
+// console.log(2**8);
+
+let str1 = "hello"
+let str2 = " Bhumi"
+
+let str3 = str1 + str2
+console.log(str3);       // hello Bhumi
+
+console.log("1" + 2);  //12
+console.log(1 + "2");   //12
+console.log("1" + 2 + 2);  // 122
+console.log(2 + 2 + "1");   //41
+
+console.log(+true);    //1
+
+console.log("2" > 1);  // automatically convert 2 to number  // true
+
+console.log( null > 0);     //false
+console.log( null == 0);    // false
+console.log( null >= 0);    //true
+
+console.log( undefined == 0);     //false
+console.log( undefined > 0);    // false
+console.log( undefined < 0);    //false
+
+//  === (strict equal, check datatype also, datatype also must be same)
+//  == if data type not same , it convert it
+
+console.log("2" === 2);  // false
+
+
+
+
+
