@@ -61,9 +61,9 @@ const myFunction = function(){
 // ***************Memory**********************************
 
 /*
-1. Heap -> (Non-primitive)  if we do any changes directly happen at original place 
+1. Heap -> (Non-primitive)  if we do any changes, directly happen at original place/memory.
 
-2. Stack -> (primitive)  if we do any changes happen at copy of an object 
+2. Stack -> (primitive)  if we do any changes, happen at copy of an object, not to original place 
 
 */
 
