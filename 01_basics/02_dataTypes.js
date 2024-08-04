@@ -25,3 +25,7 @@ console.log(typeof undefined)  // undefined
 console.log(typeof 3)        //number
 console.log(typeof null)        // object
 
+// function ka dataType => object Function
+
+
+
