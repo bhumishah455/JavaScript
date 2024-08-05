@@ -57,18 +57,34 @@ const users = [
 users[1].email
 
 
-console.log(utubeUser);
+// console.log(utubeUser);
 
-// mostly used
-console.log(Object.keys(utubeUser));
-console.log(Object.values(utubeUser));
-console.log(Object.entries(utubeUser));
+// // mostly used
+// console.log(Object.keys(utubeUser));
+// console.log(Object.values(utubeUser));
+// console.log(Object.entries(utubeUser));
 
-console.log(utubeUser.hasOwnProperty('isLoggedIn'));
-
-
+// console.log(utubeUser.hasOwnProperty('isLoggedIn'));
 
 
+
+
+
+// Object Destructor
+
+const course = {
+    coursename : "Js",
+    price : "99",
+    courseInstructor : "Bhumi"
+}
+
+//  course.courseInstructor
+
+const {courseInstructor} = course
+console.log(courseInstructor);
+
+const {courseInstructor : instructor} = course
+console.log(instructor);
 
 
 
