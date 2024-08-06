@@ -36,10 +36,61 @@ function loginUserMessage(username){
   function loginUserMessage(username="RINKY"){
          if(!username){
          console.log("Please enter a username")
-         return
+         return                                     // return se console me value print nhi hoti, with return we must write console.log at the time of function calling
      }
       return `${username} is just logged in`
   }
   //console.log(loginUserMessage())
-  console.log(loginUserMessage("Bhumi")) 
+//   console.log(loginUserMessage("Bhumi")) 
+
+// Part 2
+
+// function calculateCartPrice(num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(200))
+
+
+/*  if we are not sure that how much numbers we pass at time of function calling,
+  we use rest/spread operator in defination of function  */
+
+function calculateCartPrice(...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(200,467,900))  
+
+function calculateCartPrice(val1, val2,...num1){
+    return num1
+}
+// val1 = 200, val2 = 467
+// num1 = [900,455]
+// console.log(calculateCartPrice(200,467,900,455))
+
+const user = {
+    username : "bhumi",
+    price: 400
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+
+// handleObject({           //instead of writing user separately we also pass in function calling directly.
+//     username : "bhumi",
+//     price: 400
+// })
+
+
+const myNewArray = [200,500, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray))
+console.log(returnSecondValue([200, 400, 600]))
  
